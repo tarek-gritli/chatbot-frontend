@@ -60,7 +60,7 @@ export default function Chatbot({ onClose }: ChatInterfaceProps) {
       }
       const data = await response.json();
       const botMessage = {
-        content: data.message,
+        content: data.response,
         isUser: false,
         isError: false,
         id: Date.now().toString(),
